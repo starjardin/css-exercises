@@ -75,7 +75,7 @@ footer a {
 
 /* Make the button bigger on hover */
 footer a:hover {
-  transform: scale(-1);
+  transform: scale(4);
 }
   @media (min-width: 480px) {
 h1 {
