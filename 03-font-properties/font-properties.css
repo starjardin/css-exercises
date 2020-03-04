@@ -6,3 +6,146 @@
   /* Property example with a value */
 
 }
+
+/* font
+  font-family
+  font-size
+  font-weight
+  font-style
+  line-height
+font-variant
+font-stretch
+font-size-adjust
+font-synthesis
+letter-spacing
+word-spacing
+text-align
+text-decoration
+  text-decoration-line
+  text-decoration-style
+  text-decoration-color
+text-indent
+text-transform
+vertical-align
+white-space */
+
+
+
+Font
+  Font-family
+  /* The font-family proprety specifies a list of fonts form heighest priority to lowest.*/
+  Font-familly {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  Font-size
+  /* Font-size is used to set the size of the font (text) in css. */
+  .font-size {
+    font-size: 30px;
+  }
+
+  Font-weight
+  /* Font-weight is used for boldness of the text*/
+  font-weight {
+    font-weight: bolder;
+  }
+
+  Font-style
+  /* Font-style is used for styling the text (oblique, italic)*/
+  .font-style {
+    font-style: italic;
+    font-style: oblique;
+  }
+
+  Line-height
+  /* Line-height ised to set the height of the line box; it's comonly used to set the distance between lines of the text*/
+  .line-height {
+    line-height: 2cm;
+  }
+
+Font-variant
+/* Font-variant  font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian.*/
+.font-variant {
+  font-variant: small-caps;
+}
+
+Font-stretch
+/* Font-strech*/
+.font-stretch {
+  font-stretch: ultra-expanded;
+}
+
+Font-size-adjust
+/* Font-size-adjust sets how the font size should be chosen based on the height of lowercase rather than capital letters.*/
+.font-size-adjust {
+  font-size-adjust: 1;
+}
+
+Font-synthesis
+/* Font- synthesis controls which missing typefaces, bold or italic, may be synthesized */
+.font-synthesis {
+  font-synthesis: style weight;
+}
+
+Letter-spacing
+/* Letter-spacing sets the spacing between text characters */
+.letter-spacing {
+  letter-spacing: 5px;
+}
+
+Word-spacing
+/* Word-spacing specifies spacing behavior between words */
+.word-spacing {
+  word-spacing: 1cm;
+}
+
+Text-align
+/* Text-align sets the horizontal line in the text, this is vertical line in the block */
+.text-aling {
+  text-align: right;
+}
+
+Text-decoration
+  Text-decoration-line
+  /* Text-decoration-line sets the kind of decoration-line that is used on text in an element (undrline, line-throuhg, )*/
+  .text-decoration-line {
+    text-decoration-line: overline;
+  }
+
+  Text-decorarion-style
+  /* Text-decoration-sstyle  sets the style of the lines specified by text-decoration-line. This only applies after the text-decoration-line */
+  .text-decoration-style {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+
+  Text-decoration-color
+  /* Text-dcoration-color sets the color of decorations added to text by text-decoration-line */
+  .text-decoration-color {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(23, 199, 200);
+  }
+
+Text-indent
+/* Text-indent sets the indentation that is put before lines of text in a block. */
+.text-indent {
+  text-indent: 30px;
+}
+
+Text-transform
+/* Text-transform specifies how to capitalize text. It is used to make text appear in all-uppercase or all-lowercase. */
+.text-trasform {
+  text-transform: uppercase;
+}
+
+Vertical-align
+/* Veritcal-align sets vertical alignment of an inline, inline-block or table-cell box. */
+.vertical-align {
+  vertical-align: top;
+}
+
+White-space
+/* White-space sets how white space inside an element is handled.*/
+.white-space {
+  white-space: pre-wrap;
+}
