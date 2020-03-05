@@ -1,0 +1,80 @@
+.example > * {
+  margin-block-end: 1em;
+}
+
+.example h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+}
+.example h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.example h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+.example h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+
+}
+.example h5 {
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+.example h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-ligatures: small-caps ;
+}
+
+.example p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.example .intro {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.example p:last-child {
+  font-size: 0.75;
+  font-weight: 700;
+}
+
+/* sans serif*/
+ #section_sans_serif {
+  font-family: sans-serif;
+  font-family: Helvetica,
+}
+
+/* serif*/
+#section_serif {
+  font-family: serif;
+  font-family: Courier,
+}
+
+/*secton_monospace*/
+#section_monospace {
+  font-family: monospace;
+  font-family: Courier New;
+}
+
+/*section_fantasy*/
+#section_fantasy {
+  /*font-family: fantasy;*/
+  font-family: Impact;
+  /*font-family: Trajan Pro and Cinzel;*/
+}
+
+/*section_cursive*/
+#section_cursive {
+  font-family: cursive;
+}
