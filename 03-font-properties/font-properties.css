@@ -58,9 +58,9 @@ Font
   }
 
   Line-height
-  /* Line-height ised to set the height of the line box; it's comonly used to set the distance between lines of the text*/
+  /* Line-height ised to set the height of the line box; it's comonly used to set the distance between lines of the text use fust number*/
   .line-height {
-    line-height: 2cm;
+    line-height: 2;
   }
 
 Font-variant
@@ -70,8 +70,8 @@ Font-variant
 }
 
 Font-stretch
-/* Font-strech*/
-.font-stretch {
+/* Font-strech makes the text wider than the font*/
+.font-stretch
   font-stretch: ultra-expanded;
 }
 
@@ -96,13 +96,13 @@ Letter-spacing
 Word-spacing
 /* Word-spacing specifies spacing behavior between words */
 .word-spacing {
-  word-spacing: 1cm;
+  word-spacing: normal;
 }
 
 Text-align
 /* Text-align sets the horizontal line in the text, this is vertical line in the block */
 .text-aling {
-  text-align: right;
+  text-align: justify;
 }
 
 Text-decoration
