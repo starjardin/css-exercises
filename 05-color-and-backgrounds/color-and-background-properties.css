@@ -6,3 +6,71 @@
     /* Property example with a value */
 
   }
+
+
+
+/*color
+  background-color
+  background-image
+  background-repeat
+  background-position
+  background-attachment
+  background-clip
+  background-origin
+  background-size
+  box-shadow*/
+
+/*Color sets the color of the text appearance*/
+color {
+  color: rgb(197, 24, 255);
+  /*border: ex "curent color" soloid 1px*/
+}
+
+/*Background-color sets the background color of the element*/
+background-color {
+  background-color: rgba(26, 58, 45, 0);
+  background-color: hsl(200, 100%, 60%);
+}
+
+/*Background-image sets one or more background images on an element.*/
+background-image {
+  background-image: url("05-color-and-backgrounds/picture15.png");
+  background-image: linear-gradient(red, green, yellow);
+}
+
+/*Background-repeat sets how background images are repeated.*/
+background-repeat {
+  background-repeat: space repeat;
+}
+
+/*Background-position sets the initial position for each background image.*/
+background-position {
+  background-position: top;
+}
+
+/*Background-attachment sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.
+*/
+background-attachment {
+  background-attachment: scroll;
+}
+
+/*Background-clip ets whether an element's background extends underneath its border box, padding box, or content box.*/
+background-clip {
+  background-clip:content-box;
+}
+
+/*Background-origin  sets the background's origin: from the border start, inside the border, or inside the padding.*/
+background-origin {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+/*Background-size sets the size of the element's background image.*/
+background-size {
+  background-size: 700px
+}
+
+/*Box-shadow  effects around an element's frame.*/
+box-shadow {
+  box-shadow: 10px 5px 5px red;
+}

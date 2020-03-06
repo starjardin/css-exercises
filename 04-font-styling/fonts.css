@@ -2,6 +2,25 @@
   margin-block-end: 1em;
 }
 
+.example h2,
+.example h2,
+.example h3,
+.example h4,
+.example h5,
+.example h6 {
+ font-weight: 700;
+}
+
+
+/*.example :matches(h2, h3, h4, h5, h6) {
+  font-weight: 700;
+  background-color: royalblue;
+}*/
+
+p {
+  font-weight: 700;
+}
+
 .example h1 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -9,44 +28,36 @@
 }
 .example h2 {
   font-size: 2rem;
-  font-weight: 700;
 
 }
 .example h3 {
   font-size: 1.5rem;
-  font-weight: 700;
 
 }
 .example h4 {
   font-size: 1.125rem;
-  font-weight: 700;
 
 }
 .example h5 {
   font-size: 1rem;
-  font-weight: 700;
 
 }
 .example h6 {
   font-size: 1rem;
-  font-weight: 700;
   font-variant-ligatures: small-caps ;
 }
 
 .example p {
   font-size: 1rem;
-  font-weight: 700;
 }
 
 .example .intro {
   font-size: 1.125rem;
-  font-weight: 700;
   letter-spacing: 0.1rem;
 }
 
 .example p:last-child {
   font-size: 0.75;
-  font-weight: 700;
 }
 
 /* sans serif*/

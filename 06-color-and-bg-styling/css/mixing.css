@@ -1,0 +1,58 @@
+.section_1 {
+  background-image: url("../images/bubble.png"),
+  url("../images/coral-reef.png"),
+  linear-gradient(red, green, yellow);
+  /*background-image: url("../images/");*/
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-clip: padding-box;
+}
+
+.section_2 {
+  background-image:
+  url("../images/grass-clump.png"),
+  url("../images/grass-left.png"),
+  url("../images/sun.png"),
+  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.section_3 {
+  background-image: url("../images/palm.png"),
+  url("../images/palm-2.png"),
+  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-clip: content-box;
+}
+
+.section_1 h2 {
+  font-family: serif;
+  font-style: normal;
+  font-weight: 900px;
+  font-variant: normal;
+  font-size: 100px;
+  color: rgba(70, 155, 255, 1 )
+}
+
+.section_1 p {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: rgba(128, 220, 29, 1);
+}
+
+.section_2  h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100px;
+  color: hsl(90, 100%, 80%);
+}
+
+.section_2 p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 60px;
+}
