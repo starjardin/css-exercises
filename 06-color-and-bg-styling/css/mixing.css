@@ -1,12 +1,14 @@
 .section_1 {
   background-image: url("../images/bubble.png"),
   url("../images/coral-reef.png"),
+  url("../images/crab.png"),
   linear-gradient(red, green, yellow);
-  /*background-image: url("../images/");*/
   background-size: contain;
   background-repeat: repeat-x;
   background-position: center;
   background-clip: padding-box;
+  width: 300;
+  height: 200;
 }
 
 .section_2 {
@@ -55,4 +57,16 @@
 .section_2 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 60px;
+} 
+
+.section_3 h2 {
+  font-family: serif;
+  font-size: 70px;
+  color: rgba(222, 222, 222, 1);
+}
+
+.section_3 p {
+  font-family: monospace;
+  color: rgba(0, 0, 0, 1);
+  font-size: 40px;
 }
