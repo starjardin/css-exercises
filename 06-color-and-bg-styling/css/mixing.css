@@ -1,36 +1,38 @@
 .section_1 {
+  width: 1200px;
+  height: 900px;
   background-image: url("../images/bubble.png"),
   url("../images/coral-reef.png"),
   url("../images/crab.png"),
   linear-gradient(red, green, yellow);
-  background-size: contain;
-  background-repeat: repeat-x;
-  background-position: center;
+  background-size: 800px, contain, 400px;
+  background-repeat: repeat-x, no-repeat, repeat-x;
+  background-position: bottom, bottom, bottom;
   background-clip: padding-box;
-  width: 300;
-  height: 200;
 }
 
 .section_2 {
+  width: 1200px;
+  height: 900px;
   background-image:
   url("../images/grass-clump.png"),
   url("../images/grass-left.png"),
   url("../images/sun.png"),
-  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  linear-gradient(to left, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom, bottom, top left;
+  background-size: contain, contain, 300px;
 }
 
 .section_3 {
+  width: 1200px;
+  height: 750px;
   background-image: url("../images/palm.png"),
   url("../images/palm-2.png"),
   linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-clip: content-box;
+  background-size: contain, contain;
+  background-repeat: repeat-x, repeat-x;
+  background-position: bottom, bottom;
 }
 
 .section_1 h2 {
@@ -48,7 +50,7 @@
   color: rgba(128, 220, 29, 1);
 }
 
-.section_2  h2{
+.section_2 h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 100px;
   color: hsl(90, 100%, 80%);
