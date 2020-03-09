@@ -99,7 +99,14 @@
   font-size: 40px;
 } */
 
+html {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
 #crab {
   background-image: url("../images/coral-reef.png");
 }
