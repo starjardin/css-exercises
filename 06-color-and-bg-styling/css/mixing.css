@@ -1,27 +1,53 @@
-.section_1 {
-  width: 1200px;
-  height: 900px;
-  background-image: url("../images/bubble.png"),
+/*.section_1 figure {
+  background-image:
+  url("../images/coral-reef.png");
   url("../images/coral-reef.png"),
+  url("../images/bubble.png"),
   url("../images/crab.png"),
-  linear-gradient(red, green, yellow);
-  background-size: 800px, contain, 400px;
-  background-repeat: repeat-x, no-repeat, repeat-x;
-  background-position: bottom, bottom, bottom;
-  background-clip: padding-box;
-}
+  linear-gradient(180deg, rgba(5, 23, 255, .5) 80%, rgb(214, 228, 183) 30%);
+  background-size: 
+  800px,
+  300px,
+  300px, 
+  200px, 
+  100% 100%;
+  background-repeat: 
+  repeat-x,
+  no-repeat,
+  no-repeat, 
+  no-repeat
+  no-repeat;
+  background-position: 
+  center,
+  top right,
+  bottom, 
+  bottom left,
+  100% 100%;
+  background-clip: 
+  padding-box;
+}*/
 
-.section_2 {
-  width: 1200px;
-  height: 900px;
+/*.section_2 figure {
   background-image:
   url("../images/grass-clump.png"),
   url("../images/grass-left.png"),
   url("../images/sun.png"),
-  linear-gradient(to left, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom, bottom, top left;
-  background-size: contain, contain, 300px;
+  linear-gradient(180deg, rgba(30, 75, 115, 1) 20%, rgba(255, 255, 255, 0) 80%);
+  background-repeat: 
+  no-repeat, 
+  no-repeat, 
+  no-repeat,
+  no-repeat;
+  background-position:
+  bottom right, 
+  70deg, 
+  top left,
+  100% 100%;
+  background-size:
+  300px, 
+  contain, 
+  300px,
+  contain;
 }
 
 .section_3 {
@@ -71,4 +97,17 @@
   font-family: monospace;
   color: rgba(0, 0, 0, 1);
   font-size: 40px;
+} */
+
+
+#crab {
+  background-image: url("../images/coral-reef.png");
+}
+
+#buble {
+  height: 66opx;
+  width: 1000px;
+  background-image: url("../images/coral-reef.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
