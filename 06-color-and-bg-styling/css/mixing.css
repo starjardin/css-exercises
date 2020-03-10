@@ -1,52 +1,52 @@
-/*.section_1 figure {
+*.section_1 figure {
   background-image:
-  url("../images/coral-reef.png");
+  url("../images/coral-reef.png"),
   url("../images/coral-reef.png"),
   url("../images/bubble.png"),
   url("../images/crab.png"),
   linear-gradient(180deg, rgba(5, 23, 255, .5) 80%, rgb(214, 228, 183) 30%);
   background-size: 
   800px,
-  300px,
-  300px, 
-  200px, 
+  800px,
+  80px, 
+  80px, 
   100% 100%;
   background-repeat: 
-  repeat-x,
+  no-repeat,
   no-repeat,
   no-repeat, 
-  no-repeat
+  repeat-x,
   no-repeat;
   background-position: 
-  center,
-  top right,
-  bottom, 
-  bottom left,
+  0% 50%,
+  100% 50%,
+  90% 10%, 
+  20% 70%,
   100% 100%;
   background-clip: 
   padding-box;
-}*/
+}
 
-/*.section_2 figure {
+.section_2 figure {
   background-image:
   url("../images/grass-clump.png"),
   url("../images/grass-left.png"),
   url("../images/sun.png"),
   linear-gradient(180deg, rgba(30, 75, 115, 1) 20%, rgba(255, 255, 255, 0) 80%);
   background-repeat: 
-  no-repeat, 
+  repeat-x, 
   no-repeat, 
   no-repeat,
   no-repeat;
   background-position:
-  bottom right, 
-  70deg, 
+  100% 100%, 
+  100% 70%, 
   top left,
   100% 100%;
   background-size:
   300px, 
   contain, 
-  300px,
+  200px,
   contain;
 }
 
@@ -55,10 +55,19 @@
   height: 750px;
   background-image: url("../images/palm.png"),
   url("../images/palm-2.png"),
-  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-size: contain, contain;
-  background-repeat: repeat-x, repeat-x;
-  background-position: bottom, bottom;
+  linear-gradient(180deg, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-size:
+                   contain,
+                   contain,
+                   contain;
+  background-repeat:
+                   repeat-x,
+                   repeat-x,
+                   no-repeat;
+  background-position:
+                   100% 100%,
+                   100% 100%,
+                   100% 100%;
 }
 
 .section_1 h2 {
@@ -97,24 +106,26 @@
   font-family: monospace;
   color: rgba(0, 0, 0, 1);
   font-size: 40px;
-} */
-
+} /*
 html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 #crab {
-  background-image: url("../images/coral-reef.png");
+  background-color: green;
+  width: 400px;
+  height: 300px;
+  background-image: url("../images/crab.png");
 }
 
 #buble {
-  height: 66opx;
-  width: 1000px;
-  background-image: url("../images/coral-reef.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: 40%;
 }

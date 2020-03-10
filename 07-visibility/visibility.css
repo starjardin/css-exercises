@@ -13,29 +13,8 @@
   - What is the difference between `display: none;` and `visibility: hidden;`?
   - Why would we use `visibility: visible;`?
 
-*/
-html {
-  height: 100%;
-}
-
-body > * {
-  display: flex;
-  flex-direction: column;
-
-
-}
-
-#sky {
-  background-color: black;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 
 /* Opacity property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.*/
-
-
 
 opacity {
   opacity: 1;
@@ -43,38 +22,32 @@ opacity {
 
 /* Display sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.*/
 
+/* display: inline” Property: This property is used to display an element as an inline element (like <span>). The height and width properties are not effected on display:inline; property. It allows only left and right side of margins, not top and bottom.*/
+
 display {
   display: inline;
 }
 
+/* display none removes the element completly from the document.*/
 diplay {
   display: none;
 }
+
+/* display inine displays element as a block, as pargraphs and headers have always been*/
+/*display block*/
  display {
   display: block;
  }
 
- /*shows or hides an element without changing the layout of a document*/
+ /* Visibllity shows or hides an element without changing the layout of a document*/
 visibility {
   visibility: hidden;
   visibility: collapse;
 }
 
-/* block
-The element generates a block element box, generating line breaks both before and after the element when in the normal flow.
-inline
-The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space
+The difference between opacity and a background-color that is semi-transparent is the opacity gives the opacity of the text and the background-color that is semi-trasparent give the brightness of the text.
 
-none
-Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
-To have an element take up the space that it would normally take, but without actually rendering anything, use the visibility property instead.
+Difference between display none and visibility visible is Child element of a hidden box will be visible if their visibility is set to visible, display: none; turns off the display and removes the element completely from the document.
 
-Using a display value of none on an element will remove it from the accessibility tree. This will cause the element and all its descendant elements to no longer be announced by screen reading technology.
-
-If you want to visually hide the element, a more accessible alternative is to use a combination of properties to remove it visually from the screen but keep it parseable by assistive technology such as screen readers.
-
-For inherited properties, the initial value is used on the root element only, as long as no specified value is supplied.
-For non-inherited properties, the initial value is used on all elements, as long as no specified value is supplied.
-*/
-
-The difference between opacity and a background-color that is semi-transparent is when it gets value="1" in transparent nothing id beeing showed. opacity gives light.
+The reason why we whould use visibility visible is that we can sets the visibility of the text.
+It shows the child element which are set visibility visible when the box is set to visibility hidden
