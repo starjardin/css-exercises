@@ -1,18 +1,3 @@
-.plant {
-
-}
-
-.cloud {
-
-}
-
-.house {
-
-}
-
-#sky {
-
-}
 
 #cloud-1  {
     background-image: url("../images/cloud.svg");
@@ -29,14 +14,6 @@
 #sun {
     background-image: url("../images/sun.svg");
     background-repeat: no-repeat;
-}
-
-#countryside {
-
-}
-
-#town {
-    
 }
 
 #house-1  {
@@ -65,8 +42,4 @@
     background-image: url("../images/car.svg");
     width: 70px;
     height: 70px;
-}
-
-#road {
-    
 }
