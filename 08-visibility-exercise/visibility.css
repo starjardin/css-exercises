@@ -1,0 +1,23 @@
+nav {
+    visibility: hidden; 
+}
+
+nav li:nth-child(1) {
+    visibility: visible;
+}
+
+tr:nth-child(2) {
+    display: none;
+}
+
+tr:nth-last-child(1) td:nth-last-child(1) {
+    display: none;
+}
+
+table span {
+    display: none;
+}
+
+#opacity-canvas span {
+    opacity: .5;
+}
