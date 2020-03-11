@@ -1,7 +1,64 @@
-* {
+  * {
   /*
     Property name
     Property description
   */
     /* Property example with a value */
   }
+
+* {
+/* Box Model is a container of every visible html element. It is used to create the desing and layout of web pages.
+
+  Box model is a box in every visible html that contain its content. A box model has: margins, paddings, borders, and content. Margins are the lines which coverd the box, borers are the part that follwed after the margins, paddings are the part which cover the content box, and the content box is the box whivh contins the content of the html. Those four elements together gives the term box model. You can specify each one of those propreties how you like them.
+  
+  Border is useful when needded.
+  */
+}
+
+content-box {
+  /* Content-box is the part in the deepest of the box which contains the content of an html element*/
+}
+
+padding-box {
+  /* Padding-box is the second insid part of the box which is in between the content-box and the border box, in other words the padding box separates the content-box and the border box*/
+}
+p {
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+
+border-box {
+  /* Border box is part the arround the padding box that is in between the margins and the padding box*/
+}
+
+border-box {
+  border: 15px solid greenyellow;
+}
+
+margin-box {
+  margin-top: 50px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+}
+
+
+display {
+  display: inline-block;
+}
+
+box-sizing {
+  box-sizing: content-box;
+}
+
+.paragraph {
+  padding: 2em, 1rem, 2rem, 1rem solid red;
+  border: 1rem solid greenyellow;
+  display: inline-block;
+  box-sizing: content-box;
+  margin: 1rem dashed grey;
+}
+

@@ -17,7 +17,6 @@ tr:nth-last-child(1) td:nth-last-child(1) {
 table span {
     display: none;
 }
-
 #opacity-canvas span {
     opacity: .5;
 }
