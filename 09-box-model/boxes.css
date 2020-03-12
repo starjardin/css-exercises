@@ -6,59 +6,92 @@
     /* Property example with a value */
   }
 
-* {
-/* Box Model is a container of every visible html element. It is used to create the desing and layout of web pages.
-
-  Box model is a box in every visible html that contain its content. A box model has: margins, paddings, borders, and content. Margins are the lines which coverd the box, borers are the part that follwed after the margins, paddings are the part which cover the content box, and the content box is the box whivh contins the content of the html. Those four elements together gives the term box model. You can specify each one of those propreties how you like them.
-  
-  Border is useful when needded.
-  */
-}
 
 content-box {
-  /* Content-box is the part in the deepest of the box which contains the content of an html element*/
+  /* Content-box is the deepest part of the box which contains the content of an html element*/
 }
 
 padding-box {
   /* Padding-box is the second insid part of the box which is in between the content-box and the border box, in other words the padding box separates the content-box and the border box*/
 }
 p {
-  padding-top: 50px;
-  padding-right: 100px;
-  padding-bottom: 50px;
-  padding-left: 100px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  text-align: start;
+  text-indent: 20px;
 }
 
+p {
+  font-family: serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
 
 border-box {
   /* Border box is part the arround the padding box that is in between the margins and the padding box*/
 }
 
-border-box {
+exemple.border-box {
   border: 15px solid greenyellow;
 }
 
 margin-box {
+  /* Margin-box serrounds the boreder-box that is the part outside*/
+}
+
+When two differently sized margins of two different boxes collide: the two boxes becomes together and stick next to each other, that means no margin separates them.
+
+The formula for working out an element's visual width is the combintion of the border width, content width and the padding width.
+Width= (border width + padding width + content width)
+
+
+This is different when using box-sizing: boreder-box; on the element
+
+The difference between display values inline, inline block, and block is that inline-block allows you to set a width and height on the element. Display: inline, top and bottom margins are not respected. 
+
+exemple.margin-box {
   margin-top: 50px;
   margin-right: 25px;
   margin-bottom: 50px;
   margin-left: 25px;
 }
 
-
-display {
-  display: inline-block;
+nav {
+  content: url("../drawing.jpg");
+  width: 400px;
+  height: 300px;
 }
 
-box-sizing {
-  box-sizing: content-box;
+ html {
+  background-image: linear-gradient(135deg, rgba(0, 255, 255, 0.712), rgba(255, 255, 0, 0.822), rgba(0, 128, 0, 0.76));
+ }
+h2 {
+  font-style: normal;
+  font-family: garamond;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(25, 25, 255, .9);
 }
 
-.paragraph {
-  padding: 2em, 1rem, 2rem, 1rem solid red;
-  border: 1rem solid greenyellow;
-  display: inline-block;
-  box-sizing: content-box;
-  margin: 1rem dashed grey;
+h1 {
+  font-weight: 900;
+  font-size: 70px;
+  font-family: 'Times New Roman';
+  color: rgba(255, 255, 255, 1);
 }
 
+dt {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 80px;
+}
+
+dd {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
