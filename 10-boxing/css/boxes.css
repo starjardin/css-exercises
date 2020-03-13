@@ -1,0 +1,88 @@
+:root {
+    --base-unit: 1rem;
+}
+
+h1 {
+    border: 1rem solid orange;
+    padding: 1rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+    display: block;
+}
+
+header {
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+
+body {
+    margin: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: grid;
+}
+
+footer span {
+    border: 1rem solid;
+    display: block;
+}
+
+footer {
+    padding:  1rem;
+    margin-block-start: 1rem;
+}
+
+table tr:nth-child(1) span {
+    border-bottom: 1rem solid;
+}
+
+tr:nth-child(1) td:first-child {
+    padding-right: 1rem;
+    display: table-caption;
+}
+
+tr:nth-child(1) td:nth-child(2) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+tr:nth-child(1) td:last-child {
+    padding-left: 1rem;
+}
+
+table tr:nth-child(2) span {
+    border-top: 1rem solid;
+}
+
+tr:nth-child(2) td:first-child {
+    padding-right: 1rem;
+}
+
+tr:nth-child(2) td:nth-child(2) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+tr:nth-child(2) td:last-child {
+    padding-left: 1rem;
+}
+
+table tr:nth-child(3) span {
+    border-top: 1rem solid orange;
+}
+
+tr:nth-child(3) td:first-child {
+    padding-right: 1rem;
+}
+
+tr:nth-child(3) td:nth-child(2) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+tr:nth-child(3) td:last-child {
+    padding-left: 1rem;
+}
+
