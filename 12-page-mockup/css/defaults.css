@@ -1,0 +1,39 @@
+body {
+    font-family: serif;
+    text-align: start;
+    background-color: white;
+    margin: 1px;
+    background-size: 45rem;
+    border: black solid 2px;
+    margin: 0rem;
+    text-decoration: none;
+}
+
+article {
+    padding-block-start: 3rem;
+    padding-inline-end: 7rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 7rem;
+    text-decoration: none;
+    border: 1px solid;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+.jessi {
+    font-weight: 900;
+    font-style: italic;
+}
+
+main article {
+    background-origin: padding-box;
+}
+
+html {
+    width: 40rem;
+    margin: 1rem;
+}
+

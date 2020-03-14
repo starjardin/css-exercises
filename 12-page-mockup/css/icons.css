@@ -1,0 +1,18 @@
+footer  ul {
+    background-image: 
+    url('../images/icon-twitter.png'),
+    url('../images/icon-facebook.png'),
+    url('../images/icon-github.png');
+    background-repeat: 
+                    no-repeat,
+                    no-repeat,
+                    no-repeat;
+    background-size:
+                     1rem,
+                     1rem,
+                     1rem;
+    background-position:
+                        45% 80%,
+                        50% 80%,
+                        55% 80%;
+}
