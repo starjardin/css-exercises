@@ -13,7 +13,7 @@ Try to answer the following questions:
 
 - Answers
 
-- When we use *CSS inheritance*, we mean to inherit the parent' value to its children.
+- When we use *CSS inheritance*, we mean to inherit the parent's value to its children. That means the children will have the same value as their parents if we don't specify their value.
 
 - It affects the curent values to its descendent.
 
@@ -24,3 +24,5 @@ Try to answer the following questions:
  The 'initial' keyword represents the specified value that is designated as the property's initial value. Thus, its meaning depends on the property, but not on anything else.
 
  -Tehre might be some dangers or unintended side-effects when using `inherit` as value if you dont want the children to have the value as its parents.
+
+The possibilities with using an ancestor or universal selector are 
