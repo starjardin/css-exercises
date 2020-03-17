@@ -2,10 +2,8 @@ body {
     font-family: serif;
     text-align: start;
     background-color: white;
-    margin: 1px;
-    background-size: 45rem;
-    border: black solid 2px;
-    margin: 0rem;
+    margin: 0px;
+    border: grey solid 1px;
     text-decoration: none;
 }
 
@@ -15,7 +13,7 @@ article {
     padding-block-end: 2rem;
     padding-inline-start: 7rem;
     text-decoration: none;
-    border: 1px solid;
+    border: 1px solid gray;
 }
 
 article a {
@@ -31,9 +29,3 @@ article a {
 main article {
     background-origin: padding-box;
 }
-
-html {
-    width: 40rem;
-    margin: 1rem;
-}
-

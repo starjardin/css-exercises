@@ -1,0 +1,45 @@
+main >header h2 {
+    margin: 0rem;
+    font-size: 5.375;
+    color: white;
+}
+
+main a {
+    color: white;
+    font-size: 4.375rem;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+main > header {
+    background-image:
+    linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)),
+    url('../images/bg_desktop.jpg');
+    background-position: center;
+    color: white;
+    padding-block-start: 18.437rem;
+    padding-block-end: 16.437rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0rem;
+    margin-block-start: -12rem;
+}
+
+body >header h1 {
+    padding: 0rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+main {
+    padding-block-end: -17rem;
+}
+
+nav {
+    text-align: center;
+}
+
+main p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}

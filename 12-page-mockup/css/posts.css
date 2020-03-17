@@ -1,8 +1,9 @@
-.post {
+p >.post {
     background-color: blue;
     color: white;
-    position: relative;
-    left: 25rem;
-    top: 2rem;
     line-height: 1rem;
+}
+
+article p {
+    text-align: end;
 }

@@ -1,14 +1,35 @@
-footer {
-    line-height: 1rem;
-    border: 1px solid black;
-}
 
-h4 {
-    margin-block-start: 1rem;
-    margin-inline-start: 13rem;
-    line-height: 1rem;
+footer {
+    text-align: center;
+    padding-block-start: 7.5rem;
+    padding-block-end: 7.5rem;
 }
 
 footer ul {
     list-style: none;
+    margin-block-start: 0rem;
+    margin-block-end: 2rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding:0rem
+}
+
+/*Make all list to de displayed inline or in a raw*/
+footer li {
+    display: inline;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+
+/*Make margins between all the icons, not in the first niether the last icons*/
+footer li:first-child {
+    margin-inline-start: 0rem;
+}
+footer li:last-child {
+    margin-inline-end: 0rem;
+} 
+
+footer p {
+    margin: 0rem;
+    color: gray;
 }
