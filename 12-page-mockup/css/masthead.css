@@ -16,13 +16,13 @@ main > header {
     url('../images/bg_desktop.jpg');
     background-position: center;
     color: white;
-    padding-block-start: 18.437rem;
-    padding-block-end: 16.437rem;
+    padding-block-start: 15rem;
+    padding-block-end: 14rem;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     margin: 0rem;
-    margin-block-start: -12rem;
+    /*margin-block-start: -12rem;*/
 }
 
 body >header h1 {

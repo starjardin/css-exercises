@@ -6,4 +6,5 @@ p >.post {
 
 article p {
     text-align: end;
+    text-transform: uppercase;
 }

@@ -9,11 +9,13 @@ body {
 
 article {
     padding-block-start: 3rem;
-    padding-inline-end: 7rem;
     padding-block-end: 2rem;
-    padding-inline-start: 7rem;
     text-decoration: none;
     border: 1px solid gray;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: xx-large;
+    
 }
 
 article a {
