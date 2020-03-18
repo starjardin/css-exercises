@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <style>
+      .hah:li {
+        counter-increment: list-sum;
+      }
+
+      li>ul {
+        list-style-type: upper-roman;
+      }
+
+      body {
+        counter-increment: section;
+      }
+    </style>
+</head>
+<body>
+    <main>
+      <section>
+        <h2>
+          Pseudo element
+        </h2>
+        <ol>
+          <li>For a pseudo element to work we need a special property set for the element, that property is the content property
+          </li>
+          <li>We could leave the content property empty and just treat the Pseudo-element. However we can't remove the content property, at the very least, the content property needs double quotes as it value</li>
+          <li>The various pseudo element are:<br>
+          <ul>
+            <li>font-prorerteis</li>
+            <li>color properties</li>
+            <li>background properties</li>
+            <li>word spacing</li>
+            <li>letter spacing</li>
+            <li>text decoration</li>
+            <li>verical-aling</li>
+            <li>text-tranform</li>
+          </ul></li>
+          <li>The reason why would we use a pseudo element is that we do not have a specific selectors to work with, so the pseudo element can help use to style our document.<br>
+          A  CSS pseudo element is used to style specified pparst of an element.</li>
+        </ol>
+      </section>
+      <section class="hah">
+        <h2>Counters</h2>
+        <ol>
+          <li>
+            we use the following declaration to count in css:<br>
+              counter-increment: value;
+          </li>
+          <li> To reset a counter we use counter-rest</li>
+          <li>Counters are useful for letting you know teh appearence based on the its location in a document.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Lists</h2>
+        <ol>
+          <li>
+            list-style, list-style-type, list-style-image, list-style-position, display, color, more demo .
+          </li>
+          <li>These are some types of bullet style:
+            <ul>
+              <li>circle</li>
+              <li>square</li>
+              <li>image</li>
+              <li>roman numerals</li>
+              <li>capital letters</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
+</body>
+</html>
