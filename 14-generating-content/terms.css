@@ -23,26 +23,44 @@ body {
   counter-reset: section;
 }
 
-h3 {
-  counter-reset: subsection;
+h3::before {
+  counter-increment: section;
+  content: counters(section) ". ";
+}
+
+/*h3 {
+  counter-reset: Clause;
+}
+
+h4::before {
+  counter-increment: Clause;
+  content: counter(section) "."
+           counter(Clause) ". ";
 }
 
 h4 {
-  counter-reset: list item;
+  counter-reset: list;
 }
 
-h3::before {
-  counter-increment: section;
-  content: counters(section,".") ". "  "Major clause ";
+li:before{
+  counter-increment: list;
+  content: counter(section) "."
+           counter(Clause) "."
+           counter(list, lower-alpha) ". " ;
 }
 
-
-h4::before {
-  counter-increment: subsection;
-  content: "Clause " counter(section) "." counter(subsection) " ";
+body ol {
+  list-style-type: none;
 }
 
-li::before {
-  counter-increment: list item;
-  content: counter(subsection) ". " /*counter(list item);*/
+ol > li > ol> li {
+  counter-reset: nested-list;
 }
+
+ol> li > ol > li::before {
+  counter-increment: nested-list;
+  content: counter(section) "."
+           counter(Clause) "."
+           counter(list, lower-alpha) "."
+           counter(nested-list, lower-roman) ". " ;
+}*/

@@ -1,9 +1,13 @@
 /* Styles for all mediums go here */
-@media all {
-
+@media all{
+  a::after {
+    content: " ["attr(https://en.wikipedia.org/wiki/Tenrec"]";
+  }
 }
 
 /* Only styles for printers please */
-@media print {
-
+/* @media print {
+a:link:after, a:visited:after {
+  content:" [" attr(https://en.wikipedia.org/wiki/William_L._Marcy#State_politics) "] "; 
 }
+}*/
