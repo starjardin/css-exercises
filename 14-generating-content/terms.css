@@ -19,16 +19,17 @@
     …
 */
 
+
 body {
   counter-reset: section;
 }
 
 h3::before {
   counter-increment: section;
-  content: counters(section) ". ";
+  content: counter(section) ". ";
 }
 
-/*h3 {
+h3 {
   counter-reset: Clause;
 }
 
@@ -39,28 +40,29 @@ h4::before {
 }
 
 h4 {
-  counter-reset: list;
+  counter-reset: li;
 }
 
-li:before{
-  counter-increment: list;
-  content: counter(section) "."
-           counter(Clause) "."
-           counter(list, lower-alpha) ". " ;
+li::before {
+  counter-increment: li;
+  content:
+  counter(section) "."
+  counter(Clause) "."
+  counter(li, lower-alpha) ". ";
 }
 
-body ol {
+body li {
   list-style-type: none;
 }
 
-ol > li > ol> li {
-  counter-reset: nested-list;
+ol > li > ol> li  {
+  counter-reset:list;
 }
 
-ol> li > ol > li::before {
-  counter-increment: nested-list;
+ol > li ol > li::before {
+  counter-increment: list;
   content: counter(section) "."
-           counter(Clause) "."
-           counter(list, lower-alpha) "."
-           counter(nested-list, lower-roman) ". " ;
-}*/
+  counter(Clause) "."
+  counter(li, lower-alpha) "."
+  counter(list, lower-roman) ". ";
+}
