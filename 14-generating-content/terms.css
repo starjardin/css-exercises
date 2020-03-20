@@ -55,11 +55,11 @@ body li {
   list-style-type: none;
 }
 
-ol > li > ol> li  {
+ol {
   counter-reset:list;
 }
 
-ol > li ol > li::before {
+li li::before {
   counter-increment: list;
   content: counter(section) "."
   counter(Clause) "."
