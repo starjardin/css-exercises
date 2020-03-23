@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      background-color: lightblue;
+      width: 110px;
+      height: 100px;
+			overflow: scroll;
+			clip: rect(1rem, 2rem, 1rem, 2rem);
+    }
+
+    div {
+      background-color: lightblue;
+      width: 400px;
+      height: 100px;
+      overflow: ellipsis;
+    }
+
+    .first {
+      background-color: lightblue;
+      width: 110px;
+      height: 100px;
+      overflow: clip;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>
+      Default value for each property
+    </h2>
+    <ul>
+      <li>
+        overflow: visible
+      </li>
+      <li>
+        clip: auto
+      </li>
+      <li>
+        clip-path: none
+      </li>
+      <li>
+        text-overflow: clip
+      </li>
+    </ul>
+    <ul>
+      <li>
+        The reason why we would use default values are:
+      </li>
+      <li>
+        Teh are usefull because weca see normally the text overflow if we wanted to.
+      </li>
+      <li>
+        width and height need to se tbefore those properties work effectively. overflow and white-space.
+      </li>
+    </ul>
+    <li>
+      The browser's default way to handle contents that are larger tan its container is to display the text overflow.
+		</li>
+		<li>
+			AN ellipsis is 
+		</li>
+    <li>
+      Text-overflow is different from the other properteis because t only occurs when the container' s property has te value hidden scroll, auto, and white-space: non-wrap. 
+    </li>
+  </main>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque itaque veritatis perspiciatis, quaerat possimus iure reiciendis natus ut fuga vel mollitia nulla rerum quam soluta aperiam corrupti laborum qui fugiat!
+  </p>
+ <div>
+    Lore ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, veritatis tempore dolores ea fugit aliquam id voluptatum quod molestiae sint deleniti assumenda, corporis eligendi minima sit iure. Veritatis, adipisci tenetur?
+  </div>
+  <p class="first">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas assumenda itaque, adipisci ullam voluptates, consectetur ut aliquam minus esse reiciendis. Numquam alias quisquam fugit facere quia soluta nulla nesciunt?
+  </p>
+</body>
+</html>
