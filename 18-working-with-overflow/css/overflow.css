@@ -8,5 +8,23 @@
 }
 
 #clipping_circle img {
-  clip-path: circle(50px at 0 100px);
+  clip-path: circle(10% at 65% 25%);
+}
+
+#clipping_poly img {
+  clip-path: polygon(60% 30%, 100% 50%, 65% 80%)
+} 
+
+#overclip {
+  overflow: hidden;
+}
+
+#overclip img {
+  clip-path: circle(50px at 64.5% 25%);
+}
+
+#overflow_ellipsis .example{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
