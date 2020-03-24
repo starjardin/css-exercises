@@ -1,0 +1,18 @@
+img {
+  max-width: 40rem;
+  min-width:  30rem;
+  max-height: 35rem;
+  min-height: 15rem;
+}
+
+div > table_container {
+  min-width: 20rem;
+  max-width: 30rem;
+}
+
+svg {
+  max-width: 22vw;
+  min-width: 3vw;
+  min-height: auto;
+  max-height: 100vw;
+}

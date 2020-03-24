@@ -10,9 +10,16 @@
       height: 300px;
       border: 2px solid grey;
     }
+    div {
+      max-width: 200px;
+      min-width: 300px;
+    }
   </style>
 </head>
 <body>
+  <div>
+    hahhaha
+  </div>
   <ol>
     <li>
       Default value for those properites
@@ -27,13 +34,13 @@
       If the element is a block-like or an inline-like element those default value change
     </li>
     <li>
-      If a <code>min-width</code>value is greater than a width value then it will overflow.
+      If a <code>min-width</code>value is greater than a width value then it will overflow. It will only display the value of the min-width as its value.
     </li>
     <li>
-      If a <code>max-width</code> value is less than a width value then it only display what it value is.
+      If a <code>max-width</code> value is less than a width value, the value of the document will be displayed with the max-wdith value.
     </li>
     <li>
-      If a <code>min-width</code> vlue is is greater than max-width value then it will grow up to the min-width value.
+      If a <code>min-width</code> vlue is is greater than max-width value then it will grow up to the min-width value. So it will be displayed with the min-width value as its value.
     </li>
     <li>
       When <code>width</code> are applied to a table cells, and the content inside these cells doesn't fit then those content will overflow.
