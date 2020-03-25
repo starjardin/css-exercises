@@ -1,18 +1,23 @@
 img {
-  max-width: 40rem;
-  min-width:  30rem;
-  max-height: 35rem;
-  min-height: 15rem;
+  max-width: 100%;
+  height: auto;
 }
 
-div > table_container {
-  min-width: 20rem;
-  max-width: 30rem;
+img [width] [height] {
+  width: auto;
+  height: auto;
+}
+
+table {
+  min-width: 320px;
+}
+
+div > .table_container {
+  overflow: auto;
 }
 
 svg {
-  max-width: 22vw;
-  min-width: 3vw;
-  min-height: auto;
-  max-height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
 }
+
