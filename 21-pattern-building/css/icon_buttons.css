@@ -1,0 +1,74 @@
+a.icon {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: red;
+  border: 2px solid gray;
+  line-height: 1.5rem;
+}
+
+a.icon.icon_left::before {
+  content: "";
+  background-image: url("../../12-page-mockup/images/icon-facebook.png");
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-inline-end: 10px;
+  line-height: 1.5rem;
+}
+
+
+a.icon.icon_right::after {
+  content:"";
+  background-image: url("../../12-page-mockup/images/icon-facebook.png");  
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  line-height: 1rem;
+  margin-inline-start: 10px;
+  line-height: 1.5rem;
+}
+
+#dropdown_checkbox::after {
+  height: 0;
+  width: 0;
+  border-block-start: 2rem solid blue;
+  border-inline-end: 2rem solid red;
+  border-block-end: 2rem solid green;
+  border-inline-start: 2rem solid yellow;
+}
+
+#dropdown_checkbox:checked ~ * ul li a {
+  visibility: visible;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+ul li {
+  visibility: collapse;
+}
+
+nav.breadcrumb ol a {
+  text-decoration: none;
+}
+
+nav.breadcrumb ol {
+  list-style: none;
+}
+
+.breadcrumb ol li span {
+  display: none;
+}
+
+.breadscrumb li a::before {
+  display: block;
+  width: 0;
+  height: 0;
+}
