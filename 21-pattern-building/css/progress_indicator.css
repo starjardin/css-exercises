@@ -1,0 +1,41 @@
+div .progress_indicator a {
+  text-decoration: none;
+  display: block;
+}
+
+div .progress_indicator a span {
+  display: none;
+}
+
+div .progress_indicator li span span {
+  display: none;
+}
+
+div .progress_indicator li:nth-of-type(2) span {
+  display: none;
+}
+
+.progress_indicator li {
+  display:inline-block;
+  padding: 2rem;
+  text-align: center;
+}
+
+.progress_indicator {
+  counter-reset: step;
+}
+
+.progress_indicator li::before {
+  content: counter(step);
+  counter-increment: step;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}

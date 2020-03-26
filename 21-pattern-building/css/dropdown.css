@@ -1,0 +1,25 @@
+label::before {
+  content: "";
+  height: 0;
+  width: 0;
+  border-block-start: 10px solid black;    
+  border-inline-end: 10px solid transparent;
+  border-block-end: 10px solid transparent;
+  border-inline-start: 10px solid transparent;
+}
+
+input {
+  height: 0;
+  width: 0;
+}
+
+#dropdown_checkbox:checked ~ * a {
+  visibility: visible;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+ul li {
+  visibility: collapse;
+}
