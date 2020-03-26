@@ -1,17 +1,17 @@
-div .progress_indicator a {
+.progress_indicator a {
   text-decoration: none;
   display: block;
 }
 
-div .progress_indicator a span {
+.progress_indicator a span {
   display: none;
 }
 
-div .progress_indicator li span span {
+.progress_indicator li span span {
   display: none;
 }
 
-div .progress_indicator li:nth-of-type(2) span {
+.progress_indicator li:nth-of-type(2) span {
   display: none;
 }
 
@@ -31,7 +31,6 @@ div .progress_indicator li:nth-of-type(2) span {
   display: block;
   width: 30px;
   height: 30px;
-  background: white;
   border: 1px solid gray;
   border-radius: 50%;
   line-height: 27px;
