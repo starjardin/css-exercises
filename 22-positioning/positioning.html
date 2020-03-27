@@ -12,7 +12,7 @@
     </h2>
     <ol>
       <li>
-        The default value for <code>position</code> is static
+        The default value for <code>position</code> is <q>static</q>
       </li>
       <li>
         Some of the properties you need to supply when using any non-deault position value are: top, left, bottom, and right.
@@ -21,10 +21,23 @@
         The inferred <code>display</code> value of an element has been positioned is: the value display: block.
       </li>
       <li>
+        The thing that is special about fixed and sticky positioning is they always creat a new Stacking context.
+        Fixed positioning always keeps the navigation present at all time on the page.
+      </li>
+      <li>
         One of the non-default values for position still maintains a box in the flow document, that is relative
       </li>
       <li>
         Absolute positioned layouts are useful for elements that should not interact.
+      </li>
+      <li>
+        Sometimes if you put two absolutely positioned elements in the same physical space, they' ll stack, that means only one will be visible on top. The rules here are:
+        <ul>
+          <li>
+            To control the stacking order, Z-index is used on positioning element.
+          </li>
+        </ul>
+        A certain is element on top because when Z-index propertie is not specifed on any element, elements are stacked in the following order (from bottom to top)
       </li>
       <li>
         Css' s <q>Stacking Content</q> is a three dimensional conceptualization of html along an imaginary Z-axis relative to user.

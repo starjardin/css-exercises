@@ -21,14 +21,7 @@ nav ol li {
 }
 
 nav li:not(:last-child)::after {
-  content: "";
-  height: 0;
-  width: 0;
-  border-inline-end: 10px solid transparent;
-  border-inline-start: 10px solid tomato;
-  border-block-end: 10px solid transparent;
-  border-block-start: 10px solid transparent;
-  position: absolute;
+  content: "˃";
 }
 
 nav li a {
@@ -37,9 +30,4 @@ nav li a {
 
 nav li:nth-last-child(1) {
   padding: 1rem;
-}
-
-nav {
-  border: solid lightgray 2px;
-  padding: 0;
 }

@@ -17,7 +17,6 @@ a.icon.icon_left::before {
   background-size: contain;
   display: inline-block;
   margin-inline-end: 10px;
-  line-height: 1.5rem;
 }
 
 
