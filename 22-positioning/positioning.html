@@ -21,26 +21,33 @@
         The inferred <code>display</code> value of an element has been positioned is: the value display: block.
       </li>
       <li>
-        The thing that is special about fixed and sticky positioning is they always creat a new Stacking context.
-        Fixed positioning always keeps the navigation present at all time on the page.
+        The thing that is special about fixed and sticky positioning is they always creat a new Stacking context.<br>
+        Fixed positioning always keeps the navigation present at all time on the page. Position fixed doesn't move as scroll on the viewport.<br>
+        Sitckcy positioning allows us to make elements stick when the scroll reaches a certain point.
       </li>
       <li>
         One of the non-default values for position still maintains a box in the flow document, that is relative
       </li>
       <li>
-        Absolute positioned layouts are useful for elements that should not interact.
+        Absolute positioned layouts are useful for elements that should not interact. It doesn' t affect any elements in the document.
+      </li>
+      <li>
+        When positioning element <i>absolutely</i>, to lock that element' s coordinates to its parent element is set the properties top, let, right, and bottom.
       </li>
       <li>
         Sometimes if you put two absolutely positioned elements in the same physical space, they' ll stack, that means only one will be visible on top. The rules here are:
         <ul>
           <li>
-            To control the stacking order, Z-index is used on positioning element.
+            Controling the stacking order by using Z-index on positioning elements.
+          </li>
+          <li>
+            Opacity might by used at some cases.
           </li>
         </ul>
         A certain is element on top because when Z-index propertie is not specifed on any element, elements are stacked in the following order (from bottom to top)
       </li>
       <li>
-        Css' s <q>Stacking Content</q> is a three dimensional conceptualization of html along an imaginary Z-axis relative to user.
+        Css' s <q>Stacking Content</q> is a three dimensional conceptualization of html along an imaginary Z-axis relative to user. A <q>stacking content</q> is created when an element is positioned and assigned a z-index value other than auto.
       </li>
     </ol>
   </main>
