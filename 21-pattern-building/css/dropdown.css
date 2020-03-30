@@ -25,7 +25,3 @@ input {
 ul li {
   visibility: collapse;
 }
-
-a:hover {
-  background-color: yellow;
-} 

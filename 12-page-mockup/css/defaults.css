@@ -10,12 +10,12 @@ body {
 article {
     padding-block-start: 3rem;
     padding-block-end: 2rem;
+    padding-inline-start: 6rem;
+    padding-inline-end: 6rem;
     text-decoration: none;
     border: 1px solid gray;
-    text-align: center;
+    text-align: start;
     font-family: sans-serif;
-    font-weight: xx-large;
-    
 }
 
 article a {

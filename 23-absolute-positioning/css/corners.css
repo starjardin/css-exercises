@@ -20,7 +20,7 @@ section:first-of-type div .container .rect {
   position: absolute;
   width: 25%;
   height: 25%;
-  top: 0%;
+  top: -1%;
   left: 0%;
 }
 
