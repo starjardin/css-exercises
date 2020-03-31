@@ -1,0 +1,17 @@
+/* first image */
+
+section:nth-of-type(1) .container img:nth-of-type(1) {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+/* second image */
+section:nth-of-type(1) .container img:nth-of-type(2) {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+section:nth-of-type(1) .container p:nth-of-type(2) {
+  clear: left;
+}

@@ -1,0 +1,16 @@
+/* first image */
+
+/* section:nth-of-type(2) .container img:nth-of-type(1) {
+  float: left;
+  margin-right: 2rem;
+} */
+/* second image */
+section:nth-of-type(2) .container img:nth-of-type(1) {
+  float: left;
+  margin-right: 2rem;
+  clear: both;
+}
+
+section:nth-of-type(2) .container img {
+  overflow: auto;
+}
