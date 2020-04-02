@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Flexbox css</title>
+</head>
+<body>
+  <header>
+    <h2>Flexbox</h2>
+  </header>
+  <main>
+    <ol>
+      <li>The order of the property values in the shotorthand <code>flex</code> property is flex-grow, flex-shrink, and flex-grow. i.e. Given flex <code> 2 1</code> and <code>auto</code>
+        <ul>
+          <li>2 represents flex-grow</li>
+          <li> 1 represents flex-shrink default value for flex-shrink</li>
+          <li>auto represents flex-basis default value for flex-basis</li>
+        </ul></li>
+      <li>We need value of flex-wrap or flex-flow:
+        flex-flow: column or column-reverse and flex-wrapa: nowrap.
+      </li>
+      <li><code>Align-content</code>  represents how flex lines are aligned along the cross-axis. It controls space between flex lines on the cross-axis <code>while aling-items</code> controls all items on the cross-axis </li>
+      <li> 
+        The flex item' s align-self overrides the other property.
+       </li>
+       <li>Commoly-used box model property similar to <code>flex-basis</code> is the content box property.</li>
+       <li>There are two ways to change the ordering of flex items within a flex container. One is done on each flex items by using the <code>order</code> property. The other  one can change the whole order of the flex items at the container level. The property is the flex-direction and the valie is row-reverse or column-reverse</li>
+       <li>
+         Let' s say we wanted some space between each of our three flex items a flex column.<br>
+         Possible ways to achive this:
+         <ul>
+           <li>Use the value of justify content: space-arround, space-between, space-evenly</li>
+           <li>magin or padding</li>
+         </ul>
+       </li>
+    </ol>
+  </main>
+</body>
+</html>
