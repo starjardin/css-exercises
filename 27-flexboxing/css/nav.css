@@ -13,3 +13,16 @@ header > nav a {
   font-weight: bold;
   font-size: 1rem;
 }
+
+body > header > nav {
+  line-height: 37px;
+  margin-inline-end: 4rem;
+}
+
+body > header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 330px;
+  justify-content: space-around;
+}
