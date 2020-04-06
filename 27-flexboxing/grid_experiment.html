@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learing grid</title>
+  <style>
+ /*    li {
+      background-color: red;
+      list-style: none;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, 10rem);
+      grid-row-gap: 1rem;
+      grid-column-gap: 4rem;
+    }
+
+    .item_1 {
+      grid-column: 4 / 6;
+      background-color: yellow;
+    }
+    .item_2 {
+      grid-column: 2 / 4;
+      background-color: steelblue;
+    }
+
+    .item_3 {
+      grid-column: 5 / 7;
+      background-color: turquoise;
+    }
+
+    .item_4 {
+      grid-column: 1 / 4;
+      background-color: green;
+    } */
+    /* ul {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      column-gap: 40px;
+      row-gap: 10px;
+      grid-auto-flow: row;
+      grid-auto-rows: 25px;
+    }*/
+
+    ul {
+      display: grid;
+      width: 100%;
+      height: 600px;
+      grid-gap: 1rem;
+      grid-template-columns: 
+      [header-start main-start] 200px
+      [main-end div-start] 1fr
+      [column3-start] 1fr
+      [div-end header-end];
+      grid-template-rows: 
+      [row1-start] 80px
+      [row2-start] 1fr
+      [row3-start] 1fr
+      [row4-start] 100px
+      [row4-end];
+    }
+
+    .item_1 {
+      grid-column: header-start / header-end;
+      grid-row: row1-start / row2-start;
+      background-color: blue;
+    }
+
+    .item_2 {
+      grid-column: main-start / main-start;
+      grid-row: row2-start / row4-start;
+      background-color: yellow;
+    }
+
+    .item_3 {
+      grid-column: div-start / div-end;
+      grid-row: row2-start / row3-start;
+      background-color: green;
+    }
+
+    .item_4 {
+      grid-column: column3-start / column3-end;
+      grid-row: row3-start / row4-start;
+      background-color: hotpink;
+    }
+
+    .item_5 {
+      grid-column: column3-start / div-start;
+      grid-row: row3-start / row4-start;
+      background-color: violet;
+    }
+
+    .item_6 {
+      grid-column: header-start / header-end;
+      grid-row: row4-start / row4-end;
+      background-color: brown;
+    }
+
+    li {
+      background-color: red;
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <header
+    <h1>header</h1>
+  </header>
+  <main>
+    <h2>List items</h2>
+    <div class="container">
+      <ul>
+        <li class="item_1">list-item1</li>
+        <li class="item_2">list-item2</li>
+        <li class="item_3">list-item3</li>
+        <li class="item_4">list-item4</li>
+        <li class="item_5">list-item5</li>
+        <li class="item_6">list-item6</li>
+        <!-- <li class="item_7">list-item7</li>
+        <li class="item_8">list-item8</li>
+        <li class="item_9">list-item9</li>
+        <li class="item_10">list-item1</li>
+        <li class="item_2">list-item2</li>
+        <li class="item_3">list-item3</li>
+        <li class="item_4">list-item4</li>
+        <li class="item_5">list-item5</li>
+        <li class="item_6">list-item6</li>
+        <li class="item_7">list-item7</li>
+        <li class="item_8">list-item8</li>
+        <li class="item_9">list-item9</li>
+        <li class="item_1">list-item1</li>
+        <li class="item_2">list-item2</li>
+        <li class="item_3">list-item3</li>
+        <li class="item_4">list-item4</li>
+        <li class="item_5">list-item5</li>
+        <li class="item_6">list-item6</li>
+        <li class="item_7">list-item7</li>
+        <li class="item_8">list-item8</li>
+        <li class="item_9">list-item9</li>
+        <li class="item_1">list-item1</li>
+        <li class="item_2">list-item2</li>
+        <li class="item_3">list-item3</li>
+        <li class="item_4">list-item4</li>
+        <li class="item_5">list-item5</li>
+        <li class="item_6">list-item6</li>
+        <li class="item_7">list-item7</li>
+        <li class="item_8">list-item8</li>
+        <li class="item_9">list-item9</li> -->
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid document</title>
+</head>
+<body>
+  <main>
+    <h2>Learning grid </h2>
+    <ol>
+      <li>
+        By default, grid has one column.
+      </li>
+      <li>The difference between grid and flexbox are:
+        <ul>
+          <li>Flexbox was design for one dimmension either row or column</li>
+          <li>Grid was design for two demrnsions row and column at the same time</li>
+        </ul>
+      </li>
+      <li>
+        If the items should be arranged in single dimension row or coluumn, it better to use flexbox.
+      </li>
+      <li>If the items should be arranged in two clolumn at the same time either row and column it would be nice to use grid</li>
+      More concsie way to write out the following <code>grid-temlate-columns: 10rem 10rem 10rem 10rem;</code>is <code>grid-temlate-columns: repeat(4, 10rem);</code>
+      <li>We can specify a minimum height for a grid row, but still allow the row to increase in height if its content id too tall by setting the property:
+        <code>grid-template-rows: minmax(min-content, auto;</code>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>
