@@ -8,3 +8,8 @@ body > footer {
 body > footer a {
   color: #fff;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
