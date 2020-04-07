@@ -37,14 +37,7 @@ body > header li {
   border-block-end: 1px solid #4d4d4d;
 }
 
-body header nav ul {
-  width: 960px;
+body header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 15p;
-  column-gap: 15px;
-}
-
-body header nav ul li:nth-child(1) {
-  grid-column-start: 2;
+  grid-template-columns: 145px 1fr;
 }
