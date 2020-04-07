@@ -1,3 +1,20 @@
 .about {
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  margin-block-start: 25px;
+  height: 30rem;
+}
 
+.about > img {
+  grid-column: 2 / 4;
+}
+
+.about > .about_description {
+  grid-column: 4 / 7;
+}
+
+.about > .about_description > p {
+  margin: 0;
 }

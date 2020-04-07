@@ -36,7 +36,19 @@ body > footer p:last-child a::before {
   filter: grayscale(1);
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
+body > footer {
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+}
+
+body footer p:nth-last-of-type(2) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+body footer p:nth-last-of-type(2) {
+  grid-row-start: 1;
+  grid-row-end: 2;
 }

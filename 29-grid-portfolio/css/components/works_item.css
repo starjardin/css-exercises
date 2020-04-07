@@ -1,5 +1,9 @@
 .works_item {
-
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  margin-block-start: 15px;
 }
 
 .works_item_header {
@@ -7,17 +11,23 @@
 }
 
 .works_item_content {
-
+  grid-column-start: 2;
+  grid-column-end: 7;
 }
 
 .works_item_image_container {
-
+  
 }
 
 .works_item_navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25px);
+  grid-column-gap: 5px;
+  column-gap: 5px;
+  margin-inline-start: -10px;
 }
 
 .works_item_navigation a {

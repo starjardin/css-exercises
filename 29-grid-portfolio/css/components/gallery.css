@@ -43,7 +43,7 @@
 
 }
 
-main > ul {
+main ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 15px;
