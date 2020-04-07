@@ -13,6 +13,7 @@ body {
   margin-inline-start: 45px;
   margin-inline-end: 45px;
   max-width: 945px;
+  display: grid;
 }
 
 figure {
