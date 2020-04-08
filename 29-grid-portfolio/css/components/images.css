@@ -1,7 +1,10 @@
 .image_full {
-
+  margin-block-end: 1rem;
 }
 
 .image_half {
-
+  width: calc((145px * 3) + (2 * 15px));
+  margin-block-end: 30px;
 }
+
+
