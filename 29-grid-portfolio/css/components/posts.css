@@ -33,6 +33,14 @@
   margin-inline-start: 15px;
 }
 
+.post:not(:nth-last-of-type(1)) > footer {
+  border-bottom: 1px solid gray;
+}
+
+.post:not(:nth-last-of-type(1)) > .post_content {
+  border-bottom: 1px solid gray;
+}
+
 /* This element doubles as the post meta block. Links, metadata, etc */
 .post footer {
   font-size: 0.75rem;
