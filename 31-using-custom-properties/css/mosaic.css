@@ -1,8 +1,8 @@
-#c_and_i .row a                 { background-color: hsla(200deg, 100%, 50%, 0.1);}
+/* #c_and_i .row a                 { background-color: hsla(200deg, 100%, 50%, 0.1);}
 #c_and_i .row a + a             { background-color: hsla(200deg, 100%, 50%, 0.2);}
 #c_and_i .row a + a + a         { background-color: hsla(200deg, 100%, 50%, 0.3);}
 #c_and_i .row a + a + a + a     { background-color: hsla(200deg, 100%, 50%, 0.4);}
-#c_and_i .row a + a + a + a + a { background-color: hsla(200deg, 100%, 50%, 0.5);}
+#c_and_i .row a + a + a + a + a { background-color: hsla(200deg, 100%, 50%, 0.5);} */
 /*
   … etc …
 
@@ -10,85 +10,40 @@
 */
 
 :root {
-  
+  --base-hue: 36deg;
+  --base-alpha: 0.1;
 }
 
-.row a:nth-of-type(1) {
-  background-color:
-}
+.row a:nth-of-type(1) {  --alpha-multiplier: 1;}
+.row a:nth-of-type(2) {  --alpha-multiplier: 10;}
+.row a:nth-of-type(3) {  --alpha-multiplier: 3;}
+.row a:nth-of-type(4) {  --alpha-multiplier: 10;}
+.row a:nth-of-type(5) {  --alpha-multiplier: 5;}
+.row a:nth-of-type(6) {  --alpha-multiplier: 6;}
+.row a:nth-of-type(7) {  --alpha-multiplier: 10;}
+.row a:nth-of-type(8) {  --alpha-multiplier: 8;}
+.row a:nth-of-type(9) {  --alpha-multiplier: 9;}
+.row a:nth-of-type(10) {  --alpha-multiplier: 1;}
 
-.row a:nth-of-type(2) {
-  background-color: 
-}
+.row:nth-of-type(1) {  --hue-multiplier: 10;}
+.row:nth-of-type(2) {  --hue-multiplier:  2;}
+.row:nth-of-type(3) {  --hue-multiplier:  3;}
+.row:nth-of-type(4) {  --hue-multiplier:  10;}
+.row:nth-of-type(5) {  --hue-multiplier:  5;}
+.row:nth-of-type(6) {  --hue-multiplier:  6;}
+.row:nth-of-type(7) {  --hue-multiplier:  10;}
+.row:nth-of-type(8) {  --hue-multiplier:  8;}
+.row:nth-of-type(9) {  --hue-multiplier:  9;}
+.row:nth-of-type(10) {  --hue-multiplier:  1;}
 
-.row a:nth-of-type(3) {
-  background-color: 
-}
 
-.row a:nth-of-type(4) {
-  background-color: 
-}
+.row a {
+  --hue: calc(var(--hue-multiplier) * var(--base-hue));
+  --alpha: calc(var(--alpha-multiplier) * var(--base-alpha));
 
-.row a:nth-of-type(5) {
-  background-color: 
-}
-
-.row a:nth-of-type(6) {
-  background-color: 
-}
-
-.row a:nth-of-type(7) {
-  background-color: 
-}
-
-.row a:nth-of-type(8) {
-  background-color: 
-}
-
-.row a:nth-of-type(9) {
-  background-color: 
-}
-
-.row a:nth-of-type(10) {
-  background-color: 
-}
-
-.row:nth-of-type(1) {
-  background-color: ;
-}
-
-.row:nth-of-type(2) {
-  background-color: ;
-}
-
-.row:nth-of-type(3) {
-background-color: ;
-}
-
-.row:nth-of-type(4) {
-  background-color: ;
-}
-
-.row:nth-of-type(5) {
-  background-color: ;
-}
-
-.row:nth-of-type(6) {
-  background-color: ;
-}
-
-.row:nth-of-type(7) {
-  background-color: ;
-}
-
-.row:nth-of-type(8) {
-  background-color: ;
-}
-
-.row:nth-of-type(9) {
-  background-color: ;
-}
-
-.row:nth-of-type(10) {
-  background-color: ;
+ background-color: hsla(
+   var(--hue), 
+   100%,
+    50%, 
+   var(--alpha));
 }
