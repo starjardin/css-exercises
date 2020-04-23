@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --lighten-percentage: red;
+      --darken-precentage: blue;
+    }
+
+    html {
+      background-color: calc(var(--lighten-percentage) + var(--darken-precentage));
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      Research about calc() function.
+    </h1>
+  </header>
+  <main>
+    <ol>
+      <li>
+        The calc() function can support any numbers.
+      </li>
+      <li>
+        we can easly control the mathematicl order of the operation by remrmbering PEDMAS and BODMAS
+        <ol>
+          <li>
+          PEDMAS 
+            <ul>
+            <li><b>P</b>: parenthesis first. Calulations in the parathesis will be done before all.</li>
+            <li><b>E</b>: Exponents(powers and square Roots, ...) follow after parenthesis.</li>
+            <li><b>DM</b> divisions and multiplications. <q>Left to right</q>.</li>
+            <li><b>AS</b> : additions and substractions <q>left to right</q></li>
+            </ul>
+          </li>
+          <li>
+          BODMAS
+            <ul>
+              <li><b>B</b>: brackets has the first order.</li>
+              <li><b>O</b>: of or order (powers and square Roots, ...)</li>
+              <li><b>DM</b> and <b>AS</b></li>
+            </ul>
+          </li>
+          <li>example:
+            <ul><li><b>calc(2 + 3 * 4)= 14</b> </li>
+            <li><b>calc(2 + 3) * 4 = 20</b></li>
+            </ul>
+            </li>
+        </ol>
+      </li>
+      <li>
+        I don' t think we can convert one type of unit to another type of unit.
+      </li>
+      <li>
+        If we want to convert a unitless number to a unit value, well what we can do is multiply it by one with the unit value you want it to have.
+      </li>
+      <li>
+        The <q>plus</q> and <q>minus</q> operatiors inside the function need spaces around them because we can have negatives and positives values by putting the sign (-) and (+) in front of them and that might be confusing if we don' t have spaces around them.
+      </li>
+      <li>
+      we can easely convert a value into a negative value by multiplying them by minus one (-1)
+      </li>
+      <li>
+        We can work with color values with calc() function, but in somecases we can' t. 
+      </li>
+    </ol>
+  </main>
+</body>
+</html>
+
