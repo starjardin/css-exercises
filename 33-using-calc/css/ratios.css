@@ -1,4 +1,4 @@
-#ratio_2_1 {
+/* #ratio_2_1 {
   padding-block-start: 50%;
 }
 
@@ -12,4 +12,40 @@
 
 #ratio_1_1 {
   padding-block-start: 100%;
+} */
+
+:root {
+  --conservation-rate: 100%;
+}
+
+#ratio_2_1 {
+  /* padding-block-start: calc(400 * 100% / 800); */
+  /* --diviser: 400; */
+  --width: 800;
+  --height: 400;
+}
+
+#ratio_16_9 {
+  /* padding-block-start: calc(450 * 100%/ 800); */
+  /* --diviser: 450; */
+  --width: 800;
+  --height: 450;
+}
+
+#ratio_4_3 {
+  /* padding-block-start: calc(600 * 100% / 800); */
+  /* --diviser: 600; */
+  --width: 800;
+  --height: 600;
+}
+
+#ratio_1_1 {
+  /* padding-block-start: calc(800 * 100% / 800); */
+  /* --diviser: 800; */
+  --width: 800;
+  --height: 800;
+}
+
+figure .ratio {
+  padding-block-start: calc(var(--height) * var(--width) / var(--conservation-rate));
 }
