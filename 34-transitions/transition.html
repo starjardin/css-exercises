@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      background-color: red;
+      width: 79px;
+    }
+
+    /* img {
+      width: 50%;
+      position: absolute;
+      top: 20%;
+      right: 0%;
+    }*/
+
+    img:hover { 
+      width: 100%;
+      /* transition: width 4s; */
+      transition-duration: 4s;
+    }
+
+    /* img {
+      transition: ease-in;
+    } */
+
+    p + div {
+      transition: ease-in;
+    }
+    div {
+      margin-block-end: 1rem;
+    }
+
+    .flash {
+      width: 4rem;
+      transition: margin-left 2s;
+      background-color: red;
+      transition: ease-in;
+      transition-delay: 2s;
+    }    
+    .easy {
+      width: 4rem;
+      transition: margin-left 2s;
+      background-color: green;
+      transition: ease-in;
+    }
+
+    .slow {
+      width: 4rem;
+      transition: margin-left 2s;
+      background-color: blue;
+      transition: ease-in;
+
+    }
+
+    .steady {
+      width: 4rem;
+      transition: margin-left 2s;
+      background-color: violet;
+      transition: ease-in;
+
+    }
+
+  </style>
+</head>
+<body>
+  <p>volume</p>
+  <!-- <img src="../33-using-calc/images/jokes.png" alt="jokes"> -->
+  <div class="flash"> flash</div>
+  <div class="easy"> easy</div>
+  <div class="slow">slow</div>
+  <div class="steady">steady</div>
+  <main>
+    <section>
+      <h2>
+        Research about transition
+      </h2>
+      <div>
+        <ul>
+          <li>The <code>transition</code> property is a shorthand property. The other properties included in this shorthand property are:
+          <ul>
+            <li>transition-property</li>
+            <li>transition-delay</li>
+            <li>transition-duration</li>
+            <li>transition-timing-function</li>
+          </ul></li>
+          <li>Difference beteween timing-function, delay, and duration: <ul>
+            <li>delay: The trandition delay secifies the duration to wait for the affect of the property to change if when its value changes</li>
+            <li>timing-function: The transition-timing-function propetry sets how inermediate values are calculated.</li>
+            <li>duration: sets the length of time being desplayed during the transition</li>
+          </ul></li>
+          <li>The animatable property using transition are: 
+            font, boxe-model, color, column, flex-box, grid, clip, background.
+          </li>
+          <li>Yes, we can select more than one properity to trnsition at a time. well, discribe those properties you want to transition and separate them by commas, all, .</li>
+          <li>If we were to define the desire transition state,  using css are a: target, :hover, :focus, :checked, :active; any selsctors, any selectors</li>
+          <li>
+            Yes, we do need transition, they are usefull if we were to show something breifly or showing explanation.
+          </li>
+          <li>
+            Transition became a problem if we are in rush. It takes a lot of time to wait for. 
+          </li>
+          <li>
+            Transitions don' t work reliably with the <code>auto</code> keyword being one of the end states, because auto is not told what to do, so what it does is do what it knows.  
+          </li>
+          <li>
+            If were to stagger trandition, i.e. make a number of child elements all start at different time is to use the transition-delay property.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
