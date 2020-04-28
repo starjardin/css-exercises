@@ -4,6 +4,7 @@
   --ball-diameter: 40px;
   --ball-string-length: 200px;
   --ball-string-width: 2px;
+  --base-time: 2s;
 }
 
 .pendulum {
@@ -46,11 +47,19 @@
   background-color: #ccc;
 }
 
+.metal-ball {
+  transition-property: transform;
+  transition-delay: var(--base-time);
+  transition-duration: var(--base-time);
+}
+
 .pendulum .metal-ball:nth-of-type(1) {
   transform: rotate(20deg);
 }
 .pendulum:hover .metal-ball:nth-of-type(1) {
   transform: rotate(0deg);
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
 }
 
 .pendulum .metal-ball:nth-of-type(3) {
@@ -58,4 +67,21 @@
 }
 .pendulum:hover .metal-ball:nth-of-type(3) {
   transform: rotate(-20deg);
+  transition-duration: var(--base-time);
+  transition-timing-function: ease-out;
+  transition-delay: var(--base-time);
+}
+
+.metal-ball:nth-of-type(1) {
+  transform: rotate(0deg);
+  transition-delay: var(--base-time);
+  transition-duration: var(--base-time);
+  transition-timing-function: ease-out;
+}
+
+.metal-ball:nth-of-type(3) {
+  transform: rotate(-20deg);
+  transition-duration: var(--base-time);
+  transition-timing-function: ease-in;
+  transition-delay: 0;
 }
