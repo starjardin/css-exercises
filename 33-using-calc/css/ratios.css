@@ -46,6 +46,6 @@
   --height: 800;
 }
 
-figure .ratio {
+.ratio {
   padding-block-start: calc(var(--height) * var(--width) / var(--conservation-rate));
 }
