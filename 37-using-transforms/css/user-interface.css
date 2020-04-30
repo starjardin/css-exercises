@@ -60,5 +60,6 @@
 }
 
 .user-interface :checked ~ nav {
-
+  transform: translate(100%);
+  transition-duration: .5s;
 }
