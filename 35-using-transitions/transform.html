@@ -29,11 +29,61 @@
     button:active {
       border: 1rem 0 0 0;
     }
+
+    div::before,
+    div::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #ccc;
+    }
+
+    div::before {
+      content: "";
+      /* position: absolute; */
+      width: 50px;
+      top: 0%;
+      left: 50%;
+      bottom: 0;
+    }
+
+    div::after {
+      content: "";
+      /* position: absolute; */
+      height: 50px;
+      top: 50%;
+      left: 0;
+      right: 0;
+
+
+    }
+
+    div {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    a {
+      position: absolute ;
+      display: inline-block;
+      background-color: blue;
+      width: 5vw;
+      height: 5vw;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: 6;
+    }
+
   </style>
 </head>
 <body>
   <div>
-    <button>Log in</button>
+    <a href="/"></a>
   </div>
+
+  <!-- <button>Log in</button> -->
 </body>
 </html>
