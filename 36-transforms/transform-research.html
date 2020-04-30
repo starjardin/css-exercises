@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Transform
+    </h1>
+  </header>
+  <section>
+    <h2>
+      Research about transform property.
+    </h2>
+    <ol>
+      <li>
+        Function we can use value in <code>transform </code>' s value:
+        <ul>
+          <li>skew</li>
+          <li>rotate</li>
+          <li>scale</li>
+          <li>matrix</li>
+          <li>perspective</li>
+        </ul>
+      </li>
+      <li>We have to use separate function, in order, and as a  values, e.g <code>transform: scale(0.5) rotate(45deg)</code> when we could have had separate poperties like: <code>transform-scale: 0.5;</code>or <code>transform-rotate: 45deg</code> because the second property will overid the first property so only the property which is declared last will apply</li>
+      <li>
+        Often, we want to move the central pin or axis of the transsform away from default position. well, we can use the 
+      </li>
+      <li>
+        It is preferable to use <code>tranform: translate()</code> rather than <code>posititon</code> and its associated properties because it is much more simpler and easier to read.
+      </li>
+      <li>
+        when an element is translated / transformed, the flows of the document stays the same because the element' s ghost is still there. Therefore, the method layout <code>transform</code> is similar to positioning layout.
+      </li>
+      <li>
+        The problems that we can run in to when overriding a <code>transform</code> in more specific selector is that we can' t inherit from the child element. It is always good to put your combination selector in the parents in case it will be overrid
+      </li>
+      <li>
+        If we want to go 3d, we need to use another property to set wiew over the scene. The property is <code>transform</code>: perspective. <code>tranform-style</code>: presecne-3D.
+      </li>
+      <li>
+        We can control what transform uses in its calculations in terms of the box model. To adjust this, we use the <code>transform-box</code>
+      </li>
+    </ol>
+  </section>
+</body>
+</html>
