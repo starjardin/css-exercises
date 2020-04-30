@@ -27,7 +27,7 @@
 .scene:hover .wheel {
   left: 100%;
   transform: rotate(var(--rotation-in-degrees));
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 
 .scene .wheel {
