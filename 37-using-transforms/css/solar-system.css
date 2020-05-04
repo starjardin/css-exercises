@@ -87,6 +87,6 @@
 }
 
 .scene:hover #luna {
-  transform: translate(500%, -50%) rotate(12turn);
+  transform: translate(500%, -50%) rotate(-12turn);
   transform-origin: -550%;
 }
