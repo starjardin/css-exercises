@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .front {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+      top: 100%;
+      left: 3%;
+      z-index: 1;
+      border: 1rem black solid;
+      perspective: 800px;
+      perspective-origin: center;
+    }
+/* 
+    .back {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .right {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      transform: skew(-30deg, 0deg);
+      position: absolute;
+      top: 0%;
+      left: 15%;
+    }
+
+    .left {
+      width: 100px;
+      height: 100px;
+      background-color: hotpink;
+      transform: translate(50%);
+    }
+
+    .bottom {
+      width: 100px;
+      height: 100px;
+      background-color: saddlebrown;
+      transform: translate(50%);
+    }
+
+    .top {
+      width: 100px;
+      height: 100px;
+      background-color: teal;
+      transform: translate(50%);
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="front">1</div>
+    <div class="back">2</div>
+    <div class="top">3</div>
+    <div class="left">4</div>
+    <div class="right">5</div>
+    <div class="bottom">6</div>
+  </div>
+</body>
+</html>
