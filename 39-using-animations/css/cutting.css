@@ -1,13 +1,35 @@
-@keyframes scissor {
-  0% {
-    transform: translateX(20%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
+@keyframes cutting {
+  0% {left: -10vw;}
+  100% {left: 65vw;}
 }
 
+@keyframes top-scissor {
+  0% {transform: rotate(-4deg);}
+  10% {transform: rotate(-20deg);}
+  20% {transform: rotate(-4deg);}
+  30% {transform: rotate(-20deg);}
+  40% {transform: rotate(-4deg);}
+  50% {transform: rotate(-20deg);}
+  60% {transform: rotate(-4deg);}
+  70% {transform: rotate(-20deg);}
+  80% {transform: rotate(-4deg);}
+  90% {transform: rotate(-20deg);}
+  100% {transform: rotate(-4deg);}
+}
+
+@keyframes bottom-scissor {
+  0% {transform: rotate(4deg);}
+  10% {transform: rotate(20deg);}
+  20% {transform: rotate(4deg);}
+  30% {transform: rotate(20deg);}
+  40% {transform: rotate(4deg);}
+  50% {transform: rotate(20deg);}
+  60% {transform: rotate(4deg);}
+  70% {transform: rotate(20deg);}
+  80% {transform: rotate(4deg);}
+  90% {transform: rotate(20deg);}
+  100% {transform: rotate(4deg);}
+}
 
 :root {
   --blade-length: 250px;
@@ -99,6 +121,11 @@
   height: 200px;
   width: 370px;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: cutting;
+  animation-duration: 6s;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 #scissors-pivot {
@@ -121,6 +148,9 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 73%;
   transform: rotate(-15deg);
+  animation-name: top-scissor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 #blade-top {
@@ -148,6 +178,9 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 27%;
   transform: rotate(15deg);
+  animation-name: bottom-scissor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite; 
 }
 
 #blade-bottom {
@@ -173,12 +206,38 @@
   margin-block-end: calc(var(--handle-connect-thickness) / -2);
 }
 
+@keyframes paper-cut{
+  0% {margin-block-start: 0;}
+  50% {
+    transform: translate(-499px, -45px) rotate(30deg);
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: translate(299px, 99px) rotate(-30deg);
+  }
+}
+
 #paper-cut {
   top: 49px;
   height: 150px;
   z-index: calc(var(--middle-z-index) - 1);
   transform-origin: 50% 100%;
   transform: translateZ(100px) rotateX(15deg);
+  animation-name: paper-cut;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes paper-uncut{
+  0% {margin-block-start: 0;}
+  50% {
+    transform: translate(299px, 99px) rotate(-30deg);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(-299px, -99px) rotate(30deg);
+  }
 }
 
 #paper-uncut {
@@ -188,6 +247,10 @@
   transform: translateZ(100px) rotateX(15deg);
   border-block-start: 1px dashed #ccc;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: paper-uncut;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
 }
 
 /* Debug setup */
