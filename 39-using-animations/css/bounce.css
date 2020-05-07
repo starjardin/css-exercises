@@ -4,34 +4,54 @@
     transform: translateX(0);
   }
 
-  35% {
+  15% {
     top: calc(var(--ball-diameter) * 4);
-    transform: translateX(250px);
+    transform: translateX(0);
   }
-}
 
-@keyframes moving-ball {
-  0% {
-    transform: translate(0);
+  35% {
+    top: calc(var(--ball-diameter) * -3);
+    transform: translateX(100px);
   }
 
   45% {
-    transform: translateX(250px);
+    top: calc(var(--ball-diameter) * 4);
+    transform: translateX(200px);
   }
 
   55% {
-    top: calc(var(--ball-diameter) * 4);
+    top: calc(var(--ball-diameter) * 0.5);
     transform: translateX(300px);
   }
 
-  90% {
-    top: calc(var(--ball-diameter) * 3);
-    transform: translateX(500px);
+  65% {
+    top: calc(var(--ball-diameter) * 4);
+    transform: translateX(400px);
+  }
+
+  75% {
+    top: calc(var(--ball-diameter) * -2);
+    transform: translateX(480px);
+  }
+
+  85% {
+    top: calc(var(--ball-diameter) * 4);
+    transform: translateX(520px);
+  }
+
+  95% {
+    top: calc(var(--ball-diameter) * 2);
+    transform: translateX(560px);
+  }
+
+  96%{
+    top: calc(var(--ball-diameter) * 4);
+    transform: translateX(590px);
   }
 
   100% {
-    top: calc(var(--ball-diameter) * 4);
-    transform: translateX(550px);
+    top: -200px;
+    transform: translateX(999px);
   }
 }
 
@@ -61,10 +81,8 @@
     50% 50%;
   background-repeat: no-repeat;
   animation-name: bouncing-ball, moving-ball;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
+  animation-duration: 6s;
   animation-direction: alternate;
-  animation-timing-function: ease-in;
-  animation-play-state: running;
-  animation-timing-function:  cubic-bezier(.6,0.08,0.8,.6);
+  animation-fill-mode: forwards;
+  animation-timing-function:  linear;
 }
