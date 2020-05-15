@@ -1,0 +1,4 @@
+.focus input:focus{
+  color: #ffffff;
+  background-color: blue;
+}

@@ -1,0 +1,7 @@
+.cursor {
+  display: block;
+  box-sizing: border-box;
+  cursor: zoom-out;
+  background-color: saddlebrown;
+  color: #ffffff;
+}

@@ -1,0 +1,15 @@
+.visited a:visited {
+  color: red;
+}
+
+.active a:active {
+  color: black;
+}
+
+.target a:target {
+  color: yellow 3px solid;
+}
+
+.disabled > input:disabled {
+  background-color: black;
+} 

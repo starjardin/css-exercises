@@ -1,20 +1,6 @@
-/* ul {
- display: block;
- width: 4rem;
- height: 4rem;
- background-color: black;
- color: #ffffff;
- cursor: not-allowed;
- cursor: zoom-out;
-} */
-
-.outline{
+.outline > ul {
   display: block;
-  width: 14rem;
-  height: 14rem;
-  background-color: black;
-  color: #ffffff;
-  outline: dashed red;
-  overflow: scroll;
-  border: darkcyan 2rem solid;
+  box-sizing: border-box;
+  outline: black dashed 5px;
+  border: deeppink 2rem solid;
 }
