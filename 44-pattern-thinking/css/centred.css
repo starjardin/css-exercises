@@ -14,15 +14,21 @@
 
 /* 4 */
 [data-example="4"] {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* 5 */
-[data-example="5"] {
+[data-example="5"] > div > p {
+  line-height: 199px;
+}
 
+[data-example="5"] p {
+  line-height: 23px;
 }
 
 /* 6 */
 [data-example="6"] {
-
+  padding-block-start: calc((297px -52px) / 2);
 }
