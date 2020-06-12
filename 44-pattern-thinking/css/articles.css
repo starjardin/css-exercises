@@ -90,15 +90,24 @@ display: inline-block;
 
 [data-example="3"] h2,
 [data-example="3"] p {
-display: inline-block;
- max-width: max-content;
- align-self: center;
+  display: inline-block;
+  max-width: content;
+  align-self: center;
 }
 
 [data-example="3"] {
   padding: 0;
-border: solid black 1rem;
+  border: solid black 1rem;
 }
+
+[data-example="3"] header {
+  margin-block-end: 1rem;
+}
+
+[data-example="3"] footer {
+  margin-block-start: 1.2rem;
+}
+
 [data-example="3"] article {
   margin: 0;
   padding: 0;
