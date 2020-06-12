@@ -15,20 +15,36 @@
 /* 4 */
 [data-example="4"] {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[data-example="4"] .centred {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 /* 5 */
-[data-example="5"] > div > p {
-  line-height: 199px;
+[data-example="5"] .centred {
+  display: block;
+  margin-block-start: 2.5rem;
+  text-align: center;
 }
 
-[data-example="5"] p {
-  line-height: 23px;
+[data-example="5"] .centred p {
+  display: inline-block;
 }
 
 /* 6 */
-[data-example="6"] {
-  padding-block-start: calc((297px -52px) / 2);
+[data-example="6"]  {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-example="6"] .centred {
+ display: grid;
+ place-items: center;
 }
